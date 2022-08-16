@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="diplaystyle.css">
+  <link rel="icon" href="images/l9.png" type="image/png">
+
+	<title>User Experience</title>
+</head>
+<body>
+    <div class="container">
+         <div class="bt"><a href="index.php"><span></span>Home</a></div>
+
+         <div class="comment">
+          <h2>User's Experience!</h2>
+           <div class="database">
+              
+             <?php 
+                  include 'connect.php';
+
+                   $sql="Select * from `hsd`";
+                   $result=mysqli_query($con,$sql);
+                   if($result){
+                    while($row=mysqli_fetch_assoc($result)) {
+                      
+                      $name=$row['name'];
+                      $email=$row['email'];
+                      $comment=$row['comment'];
+                        echo ' 
+                               <img src="images/m2.png">&nbsp &nbsp &nbsp &nbsp &nbsp'.$name.' 
+                               <img src="images/m1.png">&nbsp &nbsp &nbsp &nbsp &nbsp'.$email.' 
+                               <img src="images/m3.png">&nbsp &nbsp &nbsp &nbsp &nbsp'.$comment.'<br><br><br><hr>
+                               ';
+                    }
+                   }
+                   ?>
+                 
+          </div>
+         </div>
+    </div>
+
+</body>
+</html>

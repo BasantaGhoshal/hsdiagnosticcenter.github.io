@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Catamaran', sans-serif;
+	
+}
+.container{
+	background-image: url(images/bg10.jpg);
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	
+}
+.bt{
+	text-align: left;
+     margin: 30px 0 0 160px;
+}
+.bt a{
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	margin: 0 10px;
+	padding: 5px;
+	display: inline-block;
+	border: 2px solid white;
+
+	color: white;
+	font-size: 1.3rem;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+    transition: color 0.5s;
+}
+.bt a span{
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:white;
+	z-index: -1;
+	transition: 0.5s;
+}
+.bt a:hover span{
+      height: 100%;
+}
+.bt a:hover{
+	color: black;
+	box-shadow:2px 2px 18px 9px white;
+	transition: 0.7s;
+
+}
+
+.comment{
+	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}	
+.database{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 0 5px;
+	margin-top: 50px;
+	border: 2px solid white;
+	box-shadow:2px 2px 18px 9px black;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    line-height: 6px;
+}
+.database img{
+	transform: translateY(15px);
+	width: 30px;
+	height: 30px;
+	margin:0 3px;
+	background-color: white;
+	border: 0px;
+	border-radius: 100%;
+
+}
+ .database hr{
+ 	background-color: white;
+ 	height: 3px; 
+ }
+h2{
+	font-weight: bold;
+	font-size: 2.4rem;
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	box-shadow:2px 2px 18px 9px black;
+  
+}
+
+/*----------responsive part-----------*/
+
+@media screen and (max-width: 770px){
+	.bt{
+		margin:15px auto;
+	}
+	h2{
+		font-size: 1.5rem;
+	}
+	
+   .database{
+
+   	font-size: 1.0rem;
+   	width: 100%;
+   }
+}
