@@ -328,7 +328,7 @@ hr{
 }
 .write-comment:hover{
 	transition: 0.5s;
-	animation: bounce 0.5s linear ;
+	animation: logo 2s linear;
 	
 }
 .form{
@@ -399,7 +399,7 @@ textarea{
 }
 .read-comment:hover{
     transition: 0.5s;
-	animation: bounce 0.5s linear  ;
+	animation: logo 2s linear;
 }
 .user-comment{
 	margin-top: 10px;
@@ -522,12 +522,6 @@ textarea{
 
 
 
-@keyframes bounce{
-	0%{transform: translateX(-20px);}
-	50%{transform: translateX(20px);}
-	100%{transform: translateX(-20px);}
-
-}
 
 @keyframes logo{
 	0%{transform:rotateY(15deg);}
