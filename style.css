@@ -137,9 +137,10 @@ nav ul li a{
 	padding-bottom: 70px;
 }
 .booking{
-	color: deepskyblue;
+	color: darkred;
 	text-decoration: none;
 	animation: booking 1s linear infinite;
+	font-size:1.2rem;
 }
 
 
@@ -539,9 +540,9 @@ textarea{
 @keyframes booking{
 	0%{text-shadow:2px 2px 12px red; }
 	25%{text-shadow:2px 2px 12px white;}
-	50%{text-shadow:2px 2px 12px black;}
-	75%{text-shadow:2px 2px 12px black;}
-	100%{text-shadow:2px 2px 12px green;}
+	50%{text-shadow:2px 2px 12px red;}
+	75%{text-shadow:2px 2px 12px white;}
+	100%{text-shadow:2px 2px 12px red;}
 }
 
 
