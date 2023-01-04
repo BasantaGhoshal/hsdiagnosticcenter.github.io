@@ -547,7 +547,8 @@ textarea{
 @media screen and (max-width: 770px){
 	.logo{width:70px;
 	      height:70px;
-	      border:2px solid white;	
+	      border:2px solid white;
+	      margin-left: 40px;
 	   }
 	.logo_title{
 	      font-size: 20px
