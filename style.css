@@ -397,7 +397,8 @@ textarea{
 }
 .read-comment:hover{
         transition: 0.5s;
-	border:1px solid red;
+	border:2px solid red;
+	border-radius: 10px;
 }
 .user-comment{
 	margin-top: 10px;
@@ -544,10 +545,13 @@ textarea{
 
  /*.........Header Section.......*/
 @media screen and (max-width: 770px){
-	.logo{width:90px;
-	      height:90px;
+	.logo{width:70px;
+	      height:70px;
 	      border:2px solid white;	
 	   }
+	.logo_title{
+	      font-size: 20px
+	}
 	.text h1{
 	font-family: 'Righteous', cursive;
 	font-size: 30px;
