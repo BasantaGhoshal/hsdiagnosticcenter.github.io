@@ -19,8 +19,8 @@
 .logo{
 	margin-top: 15px;
 	margin-left: 45px;
-	width: 120px;
-	height:120px;
+	width: 115px;
+	height:115px;
 	border: 3px solid white;
 	border-radius: 100%;
 }
@@ -328,7 +328,7 @@ hr{
 }
 .write-comment:hover{
 	transition: 0.5s;
-	animation: logo 2s linear;
+	border:1px solid red;
 	
 }
 .form{
@@ -354,10 +354,8 @@ input{
     outline: none;
 }
 input:hover{
-	border: 0px;
-	border-bottom:2px solid red ;
-	border-radius: 10px;
-    transition: 0.2s;
+	border:1px solid red ;
+        transition: 0.2s;
 }
 textarea{
 	padding: 5px;
@@ -366,7 +364,7 @@ textarea{
 	height: 80px;
 	font-size: 1.2rem;
 	border: 1px solid deepskyblue;
-    border-radius: 10px;
+        border-radius: 10px;
 }
 .btnn{
 	margin: 25px;
@@ -398,8 +396,8 @@ textarea{
 	flex-direction: column;
 }
 .read-comment:hover{
-    transition: 0.5s;
-	animation: logo 2s linear;
+        transition: 0.5s;
+	border:1px solid red;
 }
 .user-comment{
 	margin-top: 10px;
@@ -546,7 +544,10 @@ textarea{
 
  /*.........Header Section.......*/
 @media screen and (max-width: 770px){
-
+	.logo{width:90px;
+	      height:90px;
+	      border:2px solid white;	
+	   }
 	.text h1{
 	font-family: 'Righteous', cursive;
 	font-size: 30px;
